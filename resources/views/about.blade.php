@@ -78,7 +78,7 @@
         <img src="{{ asset('images/kashi-darshan.png') }}" class="img-fluid rounded shadow-lg" alt="Kashi Tour">
       </div>
       <div class="col-md-4">
-        <img src="{{ asset('images/ayodhya-deepotsav.jpeg') }}" class="img-fluid rounded shadow-lg" alt="Ayodhya Darshan">
+        <img src="{{ asset('images/Ayodhya-Deepotsav.jpeg') }}" class="img-fluid rounded shadow-lg" alt="Ayodhya Darshan">
       </div>
       <div class="col-md-4">
         <img src="{{ asset('images/pryagraj_sahi_snan.webp') }}" class="img-fluid rounded shadow-lg" alt="Prayagraj Snan">
