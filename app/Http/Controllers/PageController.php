@@ -100,37 +100,6 @@ class PageController extends Controller
         }
     }
 
-    
-
-    public function store(Request $request)
-    {
-        $request->validate([
-            'name'    => 'required|string|max:255',
-            'email'   => 'required|email',
-            'subject' => 'nullable|string|max:255',
-            'message' => 'required|string',
-        ]);
-
-        // Save to DB
-        $contact = Contact::create($request->all());
-
-        try {
-            // Send mail to admin
-            Mail::to('youradmin@email.com')->send(new ContactNotificationMail($contact));
-
-            return response()->json([
-                'status'  => true,
-                'message' => 'Contact form submitted & email sent successfully ✅'
-            ]);
-        } catch (\Exception $e) {
-            return response()->json([
-                'status'  => false,
-                'message' => 'Contact saved but email failed ❌',
-                'error'   => $e->getMessage()
-            ]);
-        }
-    }
-
 
 
 }

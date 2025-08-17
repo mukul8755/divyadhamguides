@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DestinationController;
+use App\Http\Controllers\ContactController;
 
 
 Route::get('/', [PageController::class, 'home']);
@@ -24,3 +25,10 @@ Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
 
 Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
 Route::get('/destinations/{id}', [DestinationController::class, 'show'])->name('destinations.show');
+
+// save the contact
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+
+Route::get('/admin/contacts', [ContactController::class, 'index'])->name('contacts.index');
+Route::get('/admin/contacts/data', [ContactController::class, 'getData'])->name('contacts.data');

@@ -19,24 +19,25 @@
       <div class="col-lg-6">
         <div class="card shadow-lg border-0 p-4 h-100">
           <h2 class="fw-bold mb-4 text-danger">Book a Tour</h2>
-          <form>
+          <form id="contactForm">
+                @csrf
             <div class="mb-3 input-group">
               <span class="input-group-text bg-danger text-white"><i class="fas fa-user"></i></span>
-              <input type="text" class="form-control" placeholder="Your Name" required>
+              <input type="text" class="form-control"  name="name"  placeholder="Your Name" required>
             </div>
             <div class="mb-3 input-group">
               <span class="input-group-text bg-danger text-white"><i class="fas fa-envelope"></i></span>
-              <input type="email" class="form-control" placeholder="Email Address" required>
+              <input type="email" class="form-control" name="email" placeholder="Email Address" required>
             </div>
             <div class="mb-3 input-group">
               <span class="input-group-text bg-danger text-white"><i class="fas fa-phone"></i></span>
-              <input type="tel" class="form-control" placeholder="Phone Number" required>
+              <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
             </div>
             <div class="mb-3 input-group">
               <span class="input-group-text bg-danger text-white"><i class="fas fa-comment-dots"></i></span>
-              <textarea class="form-control" rows="4" placeholder="Your Location & Message"></textarea>
+              <textarea class="form-control" name="message" rows="4" placeholder="Your Location & Message"></textarea>
             </div>
-            <button type="submit" class="btn btn-danger w-100 fw-bold">
+            <button  type="submit" class="btn btn-danger w-100 fw-bold">
               Submit <i class="fab fa-telegram-plane ms-2"></i>
             </button>
           </form>
@@ -79,6 +80,50 @@
 </section>
 
 @endsection
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Notiflix -->
+<script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-3.2.6.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $('#contactForm').on('submit', function (e) {
+        e.preventDefault();
+
+        let formData = $(this).serialize();
+         Notiflix.Loading.dots('Submitting...'); // show loader
+        $.ajax({
+            url: "{{ route('contact.store') }}", // Laravel route
+            method: "POST",
+            data: formData,
+            success: function (response) {
+                Notiflix.Loading.remove(); // hide loader
+                Notiflix.Notify.success("Your message has been submitted successfully!");
+                $('#contactForm')[0].reset(); // reset form
+            },
+            error: function (xhr) {
+                Notiflix.Loading.remove(); // hide loader
+                if(xhr.responseJSON?.errors) {
+                    let errors = xhr.responseJSON.errors;
+                    Object.values(errors).forEach(err => {
+                        Notiflix.Notify.failure(err[0]);
+                    });
+                } else {
+                    Notiflix.Notify.failure("Something went wrong. Please try again.");
+                }
+            },
+            
+        });
+    });
+});
+</script>
+
+
+
 
 @push('styles')
 <style>

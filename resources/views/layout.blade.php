@@ -11,7 +11,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-3.2.6.min.css">
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+  @stack('styles')
 </head>
+
 <body>
   <!-- Header -->
   <header>
@@ -30,33 +37,15 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('/') ? 'active text-danger fw-bold' : '' }}" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('about') ? 'active text-danger fw-bold' : '' }}" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('services') ? 'active text-danger fw-bold' : '' }}" href="/services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('stay') ? 'active text-danger fw-bold' : '' }}" href="/stay">Stay</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('packages') ? 'active text-danger fw-bold' : '' }}" href="/packages">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('destinations') ? 'active text-danger fw-bold' : '' }}" href="/destinations">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('blogs') ? 'active text-danger fw-bold' : '' }}" href="/blogs">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('association') ? 'active text-danger fw-bold' : '' }}" href="/association">Association</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ request()->is('contact') ? 'active text-danger fw-bold' : '' }}" href="/contact">Contact</a>
-            </li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('/') ? 'active text-danger fw-bold' : '' }}" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('about') ? 'active text-danger fw-bold' : '' }}" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('services') ? 'active text-danger fw-bold' : '' }}" href="/services">Services</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('stay') ? 'active text-danger fw-bold' : '' }}" href="/stay">Stay</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('packages') ? 'active text-danger fw-bold' : '' }}" href="/packages">Packages</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('destinations') ? 'active text-danger fw-bold' : '' }}" href="/destinations">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('blogs') ? 'active text-danger fw-bold' : '' }}" href="/blogs">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('association') ? 'active text-danger fw-bold' : '' }}" href="/association">Association</a></li>
+            <li class="nav-item"><a class="nav-link {{ request()->is('contact') ? 'active text-danger fw-bold' : '' }}" href="/contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -82,7 +71,12 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-3.2.6.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+  @stack('scripts')
 </body>
 </html>
