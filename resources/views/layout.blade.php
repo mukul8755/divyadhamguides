@@ -31,7 +31,7 @@
 
         <!-- Mobile Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars text-danger"></i>
         </button>
 
         <!-- Menu Items -->
@@ -78,5 +78,20 @@
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
   @stack('scripts')
+
+  <script>
+      const toggler = document.querySelector('.navbar-toggler i');
+  const navbar = document.getElementById('navbarNav');
+
+  navbar.addEventListener('show.bs.collapse', () => {
+    toggler.classList.remove('fa-bars');
+    toggler.classList.add('fa-times'); // change to cross
+  });
+
+  navbar.addEventListener('hide.bs.collapse', () => {
+    toggler.classList.remove('fa-times');
+    toggler.classList.add('fa-bars'); // back to bars
+  });
+    </script>
 </body>
 </html>

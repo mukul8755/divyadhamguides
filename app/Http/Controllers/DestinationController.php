@@ -43,6 +43,37 @@ class DestinationController extends Controller
                 "Walk through Ram Ki Paidi and nearby ghats"
             ]
         ],
+        3 => [
+            "title" => "Prayagraj Darshan",
+            "image" => "images/prayagraj sangam.avif",
+            "intro" => "Prayagraj (formerly Allahabad), is one of the holiest cities of India, where the sacred confluence of the Ganga, Yamuna, and the mythical Saraswati rivers takes place. This city hosts the Kumbh Mela, the world's largest spiritual gathering. A visit to Prayagraj offers divine peace, historic temples, and spiritual awakening",
+            "attractions" => [
+              
+                
+                ["img" => "images/prayagraj/triveni sangam.jpg", "title" => "Triveni Sangam", "desc" => "Ancient temple of Lord Hanuman."],
+
+                ["img" => "images/prayagraj/hanuman-ji-mandir-in-prayagraj.jpg", "title" => "Bade Hanuman Ji", "desc" => "A unique lying posture idol of Lord Hanuman, submerged during high tide – extremely revered."],
+
+                ["img" => "images/prayagraj/akshayavat.jpg", "title" => "Akshay Vat", "desc" => "Immortal Banyan tree inside the Allahabad Fort – a sacred site of divine importance."],
+
+                ["img" => "images/prayagraj/Shankar-Viman-Mandapam.jpg", "title" => "Shankar Viman Mandapam", "desc" => "A South Indian-style temple dedicated to Lord Shiva near Sangam – known for its beautiful carvings."],
+
+                ["img" => "images/prayagraj/alopi mandir.avif", "title" => "Alopi Devi Mandir", "desc" => "Also known as Alop Shankari, a unique Shakti Peetha where no idol exists, only a wooden carriage."],
+
+                ["img" => "images/prayagraj/The-Nag-Vasuki-temple.jpg", "title" => "Nagvasuki Temple", "desc" => "An ancient temple dedicated to Vasuki Nag, located on the banks of the Ganga."],
+
+            ],
+            "packages" => "Explore Ayodhya’s divine temples and spiritual sites with complete guidance and local hospitality.",
+            "activities" => [
+                "Boat ride during sunrise on the Saryu",
+                "Attend Ramayana recitation or Bhajans",
+                "Participate in evening Saryu Aarti",
+                "Walk through Ram Ki Paidi and nearby ghats"
+            ]
+        ],
+
+
+
     ];
 
     public function index()
