@@ -64,6 +64,19 @@
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+  @media (max-width: 768px) {
+  .hero .container {
+    padding-bottom: 160px; /* more space on small screens */
+  }
+}
+.hero .btn:last-child {
+  margin-bottom: 120px; /* adjust until it clears floating buttons */
+}
+.hero .container {
+  padding-bottom: 120px; /* adjust as needed */
+}
+
 </style>
 @endpush
 <!-- Popup Overlay -->
@@ -96,13 +109,16 @@
 </div>
 
 <!-- Hero Section with Video Background -->
-<section class="hero position-relative d-flex justify-content-center align-items-center text-center vh-100" style="
-    bottom: 77px;
-">
-  <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+<section class="hero position-relative d-flex justify-content-center align-items-center text-center vh-100 overflow-hidden">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover;">
     <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
   </video>
-  <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.55;"></div>
+
+  <!-- Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <!-- Content -->
   <div class="container position-relative text-white">
     <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">
       Experience Divine Darshan
@@ -115,6 +131,7 @@
     </a>
   </div>
 </section>
+
 
 <!-- About Section -->
 <section class="py-5 bg-light">
