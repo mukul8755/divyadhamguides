@@ -104,7 +104,7 @@
 
   <!-- Floating Buttons -->
   <div class="floating-buttons">
-    <a href="https://wa.me/8934991582" target="_blank" class="floating-btn btn-whatsapp">
+    <a href="https://wa.me/+918934991582" target="_blank" class="floating-btn btn-whatsapp">
       <i class="fab fa-whatsapp"></i> Free Tour Guide
     </a>
     <a href="tel:+918934991582" class="floating-btn btn-phone">
