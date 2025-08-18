@@ -28,7 +28,7 @@
             <p class="text-muted">Includes Ganga Aarti, Kashi Vishwanath Mandir, Assi Ghat, Sankat Mochan and guide support.</p>
             <div class="d-flex gap-2 mt-3">
               <a href="destinations/1" class="btn btn-outline-danger btn-sm">More Details</a>
-              <a href="https://wa.me/919999999999" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
+              <a href="https://wa.me/918934991582" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
             <p class="text-muted">Includes Ram Mandir, Hanuman Garhi, Saryu Aarti, Bharat Kund, Kanak Bhawan and local pickup/drop.</p>
             <div class="d-flex gap-2 mt-3">
               <a href="destinations/2" class="btn btn-outline-danger btn-sm">More Details</a>
-              <a href="https://wa.me/919999999999" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
+              <a href="https://wa.me/918934991582" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
             <p class="text-muted">Triveni Sangam Snan, Hanuman Mandir, Akshayavat Darshan, Shankar Viman Mandapam, Alopi Devi Mandir visit.</p>
             <div class="d-flex gap-2 mt-3">
               <a href="destinations/3" class="btn btn-outline-danger btn-sm">More Details</a>
-              <a href="https://wa.me/919999999999" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
+              <a href="https://wa.me/918934991582" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
             </div>
           </div>
         </div>

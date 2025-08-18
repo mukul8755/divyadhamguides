@@ -91,7 +91,7 @@
   <!-- Footer -->
   <footer class="footer bg-dark text-white text-center py-3">
     <div class="container">
-      <p>&copy; 2025 Divya Dham Guide Association. All rights reserved.</p>
+      <p>&copy; 2025 Divya Dham Guides Association. All rights reserved.</p>
       <p>
         <i class="fab fa-facebook-f me-2"></i>
         <i class="fab fa-instagram me-2"></i>
