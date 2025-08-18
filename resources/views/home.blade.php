@@ -96,7 +96,9 @@
 </div>
 
 <!-- Hero Section with Video Background -->
-<section class="hero position-relative d-flex justify-content-center align-items-center text-center vh-100">
+<section class="hero position-relative d-flex justify-content-center align-items-center text-center vh-100" style="
+    bottom: 77px;
+">
   <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
     <source src="{{ asset('images/video.mp4') }}" type="video/mp4">
   </video>
