@@ -202,11 +202,17 @@
 @push('scripts')
 <script>
   const popupOverlay = document.getElementById('popupOverlay');
+  const closeButton = document.getElementById('closePopupBtn');
+
+  closeButton.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+  });
 
   // Close on outside click
-  popupOverlay.addEventListener('click', (e) => {
-    if (e.target === popupOverlay) popupOverlay.style.display = 'none';
-  });
+  // popupOverlay.addEventListener('click', (e) => {
+  //   if (e.target === popupOverlay) popupOverlay.style.display = 'none';
+  // });
+
 
   // ESC key
   document.addEventListener('keydown', (e) => {

@@ -5,7 +5,6 @@
   <title>Divya Dham Guide Association - @yield('title')</title>
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Divya Dham Guide Association</title>
 
   <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -15,6 +14,37 @@
 
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+  <style>
+    /* Floating Buttons */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1055;
+    }
+
+    .floating-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .floating-btn:hover { transform: scale(1.1); }
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-phone { background-color: #007bff; }
+    .floating-btn i { margin-right: 8px; }
+  </style>
 
   @stack('styles')
 </head>
@@ -30,8 +60,9 @@
         </a>
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <i class="fas fa-bars text-danger"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-danger"></i>
         </button>
 
         <!-- Menu Items -->
@@ -71,27 +102,65 @@
     </div>
   </footer>
 
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/8934991582" target="_blank" class="floating-btn btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Free Tour Guide
+    </a>
+    <a href="tel:+918934991582" class="floating-btn btn-phone">
+      <i class="fas fa-phone-alt"></i> +91 8934991582
+    </a>
+  </div>
+
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-3.2.6.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
   @stack('scripts')
 
   <script>
-      const toggler = document.querySelector('.navbar-toggler i');
-  const navbar = document.getElementById('navbarNav');
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const togglerIcon = toggler.querySelector('i');
+    const navbarCollapse = document.getElementById('navbarNav');
 
-  navbar.addEventListener('show.bs.collapse', () => {
-    toggler.classList.remove('fa-bars');
-    toggler.classList.add('fa-times'); // change to cross
-  });
+    if (navbarCollapse && togglerIcon) {
+      // Create collapse instance but prevent auto toggle
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
 
-  navbar.addEventListener('hide.bs.collapse', () => {
-    toggler.classList.remove('fa-times');
-    toggler.classList.add('fa-bars'); // back to bars
+      // Click on toggler → only open menu if closed (cross does not close)
+      toggler.addEventListener('click', (e) => {
+        if (!navbarCollapse.classList.contains('show')) {
+          bsCollapse.show();
+        }
+        e.preventDefault(); // prevent default toggle
+      });
+
+      // Icon changes
+      navbarCollapse.addEventListener('show.bs.collapse', () => {
+        togglerIcon.classList.remove('fa-bars');
+        togglerIcon.classList.add('fa-xmark');
+      });
+      navbarCollapse.addEventListener('hide.bs.collapse', () => {
+        togglerIcon.classList.remove('fa-xmark');
+        togglerIcon.classList.add('fa-bars');
+         if (navbarCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+      });
+
+      // Close menu on nav-link click
+      document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (navbarCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+        });
+      });
+    }
   });
-    </script>
+  </script>
+
 </body>
 </html>
