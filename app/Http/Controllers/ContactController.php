@@ -17,6 +17,7 @@ class ContactController extends Controller
             'phone'   => 'nullable|string|max:20',
             'message' => 'nullable|string',
         ]);
+        
 
         $contact = Contact::create($request->all());
 
