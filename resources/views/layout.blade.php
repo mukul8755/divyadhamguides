@@ -104,11 +104,11 @@
 
   <!-- Floating Buttons -->
   <div class="floating-buttons">
-    <a href="https://wa.me/+918934991582" target="_blank" class="floating-btn btn-whatsapp">
+    <a href="https://wa.me/+919109507691" target="_blank" class="floating-btn btn-whatsapp">
       <i class="fab fa-whatsapp"></i> Free Tour Guide
     </a>
-    <a href="tel:+918934991582" class="floating-btn btn-phone">
-      <i class="fas fa-phone-alt"></i> +91 8934991582
+    <a href="tel:+919109507691" class="floating-btn btn-phone">
+      <i class="fas fa-phone-alt"></i> +91 9109507691
     </a>
   </div>
 

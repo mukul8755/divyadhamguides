@@ -70,7 +70,7 @@
     <!-- Quote Box -->
     <div class="quote-box bg-light p-4 rounded-3 text-center mt-5 shadow-sm">
       <h4 class="fw-bold text-danger">Get a Quote or Contact Our Team</h4>
-      <p class="mb-1 text-dark fs-5">📞 +91 8934991582</p>
+      <p class="mb-1 text-dark fs-5">📞 +91 9109507691</p>
       <p class="mb-0 text-dark fs-5">📧 divyadhamguides@gmail.com</p>
     </div>
 

@@ -50,7 +50,7 @@
     <div class="d-flex flex-wrap justify-content-center gap-3">
       <a href="{{ route('contact') }}" class="btn btn-danger btn-lg rounded-pill px-4">Basic Package</a>
       <a href="{{ route('contact') }}" class="btn btn-warning btn-lg rounded-pill px-4">VIP Package</a>
-      <a href="https://wa.me/918934991582" target="_blank" class="btn btn-success btn-lg rounded-pill px-4">
+      <a href="https://wa.me/919109507691" target="_blank" class="btn btn-success btn-lg rounded-pill px-4">
         <i class="fab fa-whatsapp"></i> WhatsApp Us
       </a>
     </div>

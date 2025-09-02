@@ -59,7 +59,7 @@
             <p class="text-muted">123 Spiritual Road, Ayodhya, Uttar Pradesh</p>
             
             <h6 class="fw-bold">📞 Call Us:</h6>
-            <p class="text-muted">+91 8934991582</p>
+            <p class="text-muted">+91 9109507691</p>
 
             <h6 class="fw-bold">✉️ Email:</h6>
             <p class="text-muted">divyadhamguides@gmail.com</p>
