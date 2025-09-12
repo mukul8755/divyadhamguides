@@ -18,14 +18,14 @@
       @foreach($blogs as $id =>$blog)
       <div class="col-md-6 col-lg-4">
         <div class="card blog-card h-100 shadow-sm border-0 rounded-3 hover-blog">
-          <img src="{{ asset($blog['image']) }}" class="card-img-top" alt="{{ $blog['title'] }}">
+          <img src="{{ asset('storage/' . $blog->featured_image) }}"  class="card-img-top" alt="{{ $blog['title'] }}">
           <div class="card-body">
             <div class="blog-meta text-muted small mb-2">
-              By <strong>{{ $blog['author'] }}</strong> | {{ $blog['date'] }}
+              By <strong>{{ $blog->author->name ?? 'Unknown' }}</strong> | {{ $blog->created_at->format('F j, Y, g:i a') }}
             </div>
             <h5 class="fw-bold text-danger">{{ $blog['title'] }}</h5>
-            <p class="text-muted">{{ $blog['excerpt'] }}</p>
-            <a href="{{ route('blogs.show', $id) }}" class="btn btn-outline-danger btn-sm mt-2">Read More</a>
+              <p>Category: {{ $blog->category->name ?? 'Uncategorized' }}</p>
+            <a href="{{ route('blogs.show', $blog->slug) }}" class="btn btn-outline-danger btn-sm mt-2">Read More</a>
           </div>
         </div>
       </div>

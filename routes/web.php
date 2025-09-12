@@ -32,3 +32,9 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 
 Route::get('/admin/contacts', [ContactController::class, 'index'])->name('contacts.index');
 Route::get('/admin/contacts/data', [ContactController::class, 'getData'])->name('contacts.data');
+
+
+
+Route::options('{any}', function () {
+    return response()->noContent();
+})->where('any', '.*');
