@@ -151,11 +151,13 @@
     <h2 class="fw-bold text-danger mb-5">Our Services</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="service-box p-4 shadow-sm h-100 rounded-4 bg-white">
-          <i class="fas fa-gopuram fa-3x text-danger mb-3"></i>
-          <h5 class="fw-bold">Temple Guidance</h5>
-          <p class="text-muted">Visit ancient temples with experienced spiritual guides.</p>
-        </div>
+        <a href="/destinations" class="text-decoration-none text-dark">
+          <div class="service-box p-4 shadow-sm h-100 rounded-4 bg-white">
+            <i class="fas fa-gopuram fa-3x text-danger mb-3"></i>
+            <h5 class="fw-bold">Temple Guidance</h5>
+            <p class="text-muted">Visit ancient temples with experienced spiritual guides.</p>
+          </div>
+        </a>
       </div>
       <div class="col-md-4">
         <div class="service-box p-4 shadow-sm h-100 rounded-4 bg-white">
@@ -205,7 +207,7 @@
   <div class="container text-center">
     <h2 class="fw-bold mb-3">Plan Your Spiritual Journey Today</h2>
     <p class="lead mb-4">Join thousands of devotees who experienced peace, devotion, and comfort with us.</p>
-    <a href="/contact" class="btn btn-light btn-lg px-5 py-3 rounded-pill shadow">Get in Touch</a>
+    <a href="/contact" class="btn btn-lg btn-danger mt-4 shadow-lg px-5 py-3 rounded-pill animate__animated animate__fadeInUp">Get in Touch</a>
   </div>
 </section>
 

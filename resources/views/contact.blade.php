@@ -47,7 +47,7 @@
       <!-- Contact Info -->
       <div class="col-lg-6">
         <div class="card shadow-lg border-0 p-4 h-100 bg-light">
-          <h3 class="fw-bold text-danger">Get in Touch</h3>
+          <h3 class="btn btn-lg btn-danger mt-4 shadow-lg px-5 py-3 rounded-pill animate__animated animate__fadeInUp">Get in Touch</h3>
           <p class="text-muted mt-3">
             <strong>Divya Dham Guide Association</strong><br>
             A part of the Leisure and Hospitality sector of the Vacation Planner Group.  

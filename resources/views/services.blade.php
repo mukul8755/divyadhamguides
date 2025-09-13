@@ -30,16 +30,24 @@
           <i class="fas fa-bus-alt fa-3x text-danger mb-3"></i>
           <h5 class="fw-bold">Travel Arrangements</h5>
           <p class="text-muted">Pickup/drop from railway station or airport with private transport for yatras.</p>
+
+          <!-- Know More button -->
+          <a href="#" class="btn btn-outline-danger mt-3">Know More</a>
         </div>
       </div>
+
 
       <div class="col-md-4">
         <div class="card h-100 text-center shadow-sm border-0 rounded-3 p-4">
           <i class="fas fa-bed fa-3x text-danger mb-3"></i>
           <h5 class="fw-bold">Comfortable Stays</h5>
           <p class="text-muted">Clean and budget-friendly rooms near temples and ghats.</p>
+          
+          <!-- Know More button -->
+          <a href="/stay" class="btn btn-outline-danger mt-3">Know More</a>
         </div>
       </div>
+
 
       <div class="col-md-4">
         <div class="card h-100 text-center shadow-sm border-0 rounded-3 p-4">
