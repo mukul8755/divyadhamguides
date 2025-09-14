@@ -102,6 +102,9 @@ class PageController extends Controller
     public function association() {
         return view('association');
     }
+    public function travelSupport() {
+        return view('travel-support');
+    }
 
 
     public function sendMail()

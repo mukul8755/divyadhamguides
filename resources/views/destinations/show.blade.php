@@ -20,7 +20,7 @@
   </div>
 </section>
 
-<!-- Attractions -->
+<!-- Major Attractions -->
 <section class="attractions py-5 bg-light">
   <div class="container">
     <h2 class="fw-bold text-danger text-center mb-5">🛕 Major Attractions</h2>
@@ -42,7 +42,29 @@
   </div>
 </section>
 
-<!-- Packages -->
+<!-- Additional Attractions -->
+@if(!empty($destination['additional_attractions']))
+<section class="additional-attractions py-5">
+  <div class="container">
+    <h2 class="fw-bold text-danger text-center mb-5">✨ Additional Attractions <small class="text-muted fs-6">(Not included in main package)</small></h2>
+    <div class="row g-4">
+      @foreach($destination['additional_attractions'] as $attraction)
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-3">
+          <img src="{{ asset($attraction['img']) }}" class="card-img-top" alt="{{ $attraction['title'] }}">
+          <div class="card-body text-center">
+            <h5 class="fw-bold text-danger">{{ $attraction['title'] }}</h5>
+            <p class="text-muted small">{{ $attraction['desc'] }}</p>
+          </div>
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</section>
+@endif
+
+<!-- Package Options -->
 <section class="package py-5">
   <div class="container text-center">
     <h2 class="fw-bold text-danger mb-4">📦 Package Options</h2>
@@ -75,7 +97,7 @@
   </div>
 </section>
 
-<!-- Back Button -->
+<!-- Back to Destinations -->
 <div class="container text-center py-5">
   <a href="{{ route('destinations.index') }}" 
      class="btn btn-outline-danger btn-lg rounded-pill px-4">

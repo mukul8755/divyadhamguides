@@ -34,6 +34,8 @@ class DestinationController extends Controller
                 ["img" => "images/ayodhya/hanuman garhi.jpg", "title" => "Hanuman Garhi", "desc" => "Ancient temple of Lord Hanuman."],
                 ["img" => "images/ayodhya/saryu r.jpg", "title" => "Saryu River Ghat", "desc" => "Holy river with divine Aarti..."],
                 ["img" => "images/ayodhya/1-kanak-bhawan-ayodhya.jpg", "title" => "Kanak Bhawan", "desc" => "Temple of Ram-Sita..."],
+                ["img" => "images/ayodhya/Prachin-Surya-Kund-Mandir.jpg", "title" => "Surya Kund", "desc" => "Water tank associated with Surya Dev..."],
+                ["img" => "images/ayodhya/guptar ghat.jpg", "title" => "Guptar Ghat", "desc" => "Where Lord Ram took Jal Samadhi..."],
             ],
             "packages" => "Explore Ayodhya’s divine temples and spiritual sites with complete guidance and local hospitality.",
             "activities" => [
@@ -41,7 +43,12 @@ class DestinationController extends Controller
                 "Attend Ramayana recitation or Bhajans",
                 "Participate in evening Saryu Aarti",
                 "Walk through Ram Ki Paidi and nearby ghats"
-            ]
+            ],
+            "additional_attractions" => [
+                ["img" => "images/ayodhya/chhapiya temple1.jpeg", "title" => "Chhapiya Temple (Gonda)", "desc" => "Birthplace of Swaminarayan."],
+                ["img" => "images/ayodhya/devi patan mandir.jpg", "title" => "Devipatan Temple (Balrampur)", "desc" => "Shaktipeeth of Maa Durga."],
+                // Add more if needed
+            ],
         ],
         3 => [
             "title" => "Prayagraj Darshan",

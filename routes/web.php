@@ -14,6 +14,7 @@ Route::get('/services', [PageController::class, 'services']);
 Route::get('/stay', [PageController::class, 'stay']);
 Route::get('/packages', [PageController::class, 'packages']);
 Route::get('/association', [PageController::class, 'association']);
+Route::get('/travel-support', [PageController::class, 'travelSupport']);
 
 
 Route::get('/sendMail', [PageController::class, 'sendMail']);
