@@ -138,10 +138,10 @@
         <!-- Content -->
         <div class="container position-relative text-white">
             <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">
-                Experience Divine Darshan
+                Welcome to Divya Dham Guide Association
             </h1>
             <p class="lead mt-3 animate__animated animate__fadeInUp">
-                Guided spiritual journeys in Kashi, Ayodhya & Prayagraj
+                Your trusted partner for spiritual journeys in Ayodhya, Varanasi, and Prayagraj.
             </p>
             <a href="#packages"
                 class="btn btn-lg btn-danger mt-4 shadow-lg px-5 py-3 rounded-pill animate__animated animate__fadeInUp">
@@ -156,9 +156,7 @@
         <div class="container text-center">
             <h2 class="fw-bold text-danger mb-4">About Us</h2>
             <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                We specialize in organizing <span class="fw-bold text-dark">spiritual tours</span>
-                across India’s most sacred cities. Our mission is to help devotees connect deeply with
-                their faith through guided darshans, comfortable stays, and reliable travel support.
+               We specialize in curating <span class="fw-bold">the best spiritual tour packages in Ayodhya and Varanasi,</span> designed to help devotees and travelers experience India’s most sacred cities with comfort and authenticity. Whether you want to take a holy dip at the Triveni Sangam in Prayagraj, attend the mesmerizing Ganga Aarti in Varanasi, or seek blessings at the Ram Mandir in Ayodhya, we ensure your pilgrimage is smooth, meaningful, and unforgettable.
             </p>
         </div>
     </section>
@@ -232,6 +230,164 @@
             </div>
         </div>
     </section>
+
+{{-- Why Choose Us --}}
+    <section class="py-5 container">
+        <h2 class="mb-4 text-center text-danger">Why Choose Us</h2>
+        <p class="text-center">
+            <strong>Divya Dham Guide Association</strong> is a trusted name for spiritual and pilgrimage tours in 
+            <strong>Ayodhya</strong>, <strong>Varanasi</strong>, and <strong>Prayagraj</strong>. 
+            Here’s why thousands of pilgrims choose us:
+        </p>
+        <ul class="list-unstyled mt-4 mx-auto" style="max-width: 800px;">
+            <li class="mb-2">🌸 <strong>Customized Spiritual Tour Packages</strong> – Explore Ayodhya, Varanasi, and Prayagraj with itineraries tailored to your needs.</li>
+            <li class="mb-2">🕒 <strong>24/7 Tour and Travel Assistance</strong> – Available round-the-clock to help with bookings, darshan arrangements, and travel support.</li>
+            <li class="mb-2">📜 <strong>Professional Tour Guides</strong> – Experienced guides enrich your journey with history, culture, and spiritual insights.</li>
+            <li class="mb-2">📍 <strong>Local Expertise</strong> – Discover hidden temples, authentic rituals, and local traditions with local guides.</li>
+            <li class="mb-2">🛡️ <strong>Safe & Reliable Services</strong> – Trusted by thousands of pilgrims for seamless travel, comfortable stays, and devotional experiences.</li>
+        </ul>
+    </section>
+
+    {{-- Our Spiritual Tour Packages --}}
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 text-center text-danger">Our Spiritual Tour Packages</h2>
+
+            <div class="mb-5">
+                <h3>1. Most Affordable Pilgrimage Packages in Ayodhya & Varanasi</h3>
+                <p>Discover the sacred sites of:</p>
+                <ul style="list-style-type: none;">
+                    <li>Ram Mandir, Hanuman Garhi, and Kanak Bhawan in Ayodhya</li>
+                    <li>Kashi Vishwanath Temple, Dashashwamedh Ghat, and Sarnath in Varanasi</li>
+                </ul>
+                <p>Experience evening aartis, sacred rituals, and guided temple visits with our professional guides.</p>
+            </div>
+
+            <div class="mb-5">
+                <h3>2. Spiritual Tour Packages: Ayodhya – Varanasi – Prayagraj</h3>
+                <ul style="list-style-type: none;">
+                    <li>Holy dip at Triveni Sangam (Ganga, Yamuna, Saraswati confluence)</li>
+                    <li>The famous Ganga Aarti at Dashashwamedh Ghat</li>
+                    <li>Darshan at sacred shrines in Ayodhya and Varanasi</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>3. Customized Pilgrimage Packages</h3>
+                <p>Traveling with family, senior citizens, or international devotees? We offer:</p>
+                <ul style="list-style-type: none;">
+                    <li>Tailor-made itineraries</li>
+                    <li>Comfortable hotels and hygienic meals</li>
+                    <li>Private vehicles and personal travel coordinators</li>
+                    <li>Stress-free planning and 24/7 support</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {{-- 24/7 Travel Agency --}}
+    <section class="py-5 container">
+        <h2 class="mb-4 text-center text-danger">24/7 Tour and Travel Agency for Pilgrimage Tours</h2>
+        <p class="text-center mx-auto" style="max-width: 800px;">
+            We operate round the clock to ensure your spiritual journey is smooth. Whether it’s last-minute darshan arrangements, local transfers, or tour guide bookings, our <strong>24/7 travel agency in Ayodhya</strong> is always ready to help.
+        </p>
+    </section>
+
+    {{-- Book Professional Tour Guides --}}
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center text-danger">Book Professional Tour Guides</h2>
+            <p class="text-center mx-auto" style="max-width: 800px;">
+                A pilgrimage is not just about visiting temples—it’s about understanding their significance.
+                Our <strong>professional tour guides in Ayodhya, Varanasi, and Prayagraj</strong> bring alive the legends, rituals, and history behind every shrine, making your journey truly memorable.
+            </p>
+        </div>
+    </section>
+
+    {{-- Plan Your Pilgrimage --}}
+    <section class="py-5 container">
+        <h2 class="mb-4 text-center">Plan Your Pilgrimage with Divya Dham Guide Association</h2>
+        <p class="text-center mx-auto" style="max-width: 800px;">
+            From <strong>Ayodhya Ram Mandir Darshan</strong> to <strong>Varanasi Ganga Aarti</strong> and the <strong>Triveni Sangam Snan</strong>,
+            we ensure every moment of your pilgrimage is filled with peace, devotion, and divine energy.
+        </p>
+    </section>
+
+    {{-- FAQs --}}
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center text-danger">Frequently Asked Questions (FAQs)</h2>
+
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Q1. What are the best spiritual tour packages in Ayodhya and Varanasi?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer curated packages that include Ram Mandir, Hanuman Garhi, Kashi Vishwanath Temple, Dashashwamedh Ghat, and Ganga Aarti, along with comfortable travel and stay.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Q2. Do you provide 24/7 support during pilgrimage tours?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. As a 24/7 tour and travel agency, we provide round-the-clock assistance for bookings, darshan, transportation, and emergencies.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Q3. Can I book professional tour guides in Ayodhya, Varanasi, and Prayagraj?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely. We provide certified local guides who share spiritual, cultural, and historical insights.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Q4. Do you offer customized tour packages for families and senior citizens?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, our customized spiritual tour packages are ideal for families and elderly pilgrims, with flexible itineraries and private travel options.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            Q5. How do I book a tour with Divya Dham Guide Association?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can easily contact us via our website or call our 24/7 helpline to book your pilgrimage package.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- CTA Section -->
     <section class="py-5 text-white" style="background: linear-gradient(135deg, #b91c1c, #7f1d1d);">

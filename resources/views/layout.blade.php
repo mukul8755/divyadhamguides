@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Divya Dham Guide Association - @yield('title')</title>
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KG2CVF9W');</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-53NFYKVWNN"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-53NFYKVWNN');
+    </script>
 
     {{-- Default Meta Tags --}}
     <meta charset="UTF-8">
@@ -11,8 +30,7 @@
 
     {{-- SEO Meta --}}
     <meta name="description" content="@yield('meta_description', 'Spiritual tour packages in Ayodhya, Varanasi & Prayagraj. 24/7 tour and travel agency for pilgrimage, darshan, and cultural journeys.')">
-    <meta name="keywords"
-        content="Ayodhya tour, Varanasi tour, Prayagraj tour, spiritual travel, pilgrimage, darshan, local guides, cultural journeys, Divya Dham Guide Association">
+    <meta name="keywords" content="Ayodhya tour, Varanasi tour, Prayagraj tour, spiritual travel, pilgrimage, darshan, local guides, cultural journeys, Divya Dham Guide Association">
     <meta name="author" content="Divya Dham Guide Association">
 
     {{-- Open Graph (for social media) --}}
@@ -21,6 +39,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="@yield('meta_url', 'https://divyadhamguides.com')">
     <meta property="og:image" content="@yield('meta_image', asset('images/og-image.jpg'))">
+
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,6 +95,10 @@
 </head>
 
 <body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG2CVF9W"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="mainNavbar">
@@ -170,12 +193,10 @@
             const navbarCollapse = document.getElementById('navbarNav');
 
             if (navbarCollapse && togglerIcon) {
-                // Create collapse instance but prevent auto toggle
                 const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
                     toggle: false
                 });
 
-                // Click on toggler → only open menu if closed (cross does not close)
                 toggler.addEventListener('click', (e) => {
                     if (!navbarCollapse.classList.contains('show')) {
                         bsCollapse.show();
@@ -183,7 +204,6 @@
                     e.preventDefault(); // prevent default toggle
                 });
 
-                // Icon changes
                 navbarCollapse.addEventListener('show.bs.collapse', () => {
                     togglerIcon.classList.remove('fa-bars');
                     togglerIcon.classList.add('fa-xmark');
@@ -196,7 +216,6 @@
                     }
                 });
 
-                // Close menu on nav-link click
                 document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
                     link.addEventListener('click', () => {
                         if (navbarCollapse.classList.contains('show')) {
