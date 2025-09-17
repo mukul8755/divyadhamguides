@@ -28,12 +28,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {{-- SEO Meta --}}
-    <meta name="description" content="@yield('meta_description', 'Spiritual tour packages in Ayodhya, Varanasi & Prayagraj. 24/7 tour and travel agency for pilgrimage, darshan, and cultural journeys.')">
-    <meta name="keywords" content="Ayodhya tour, Varanasi tour, Prayagraj tour, spiritual travel, pilgrimage, darshan, local guides, cultural journeys, Divya Dham Guide Association">
-    <meta name="author" content="Divya Dham Guide Association">
+   <title>@yield('title', 'Best Spiritual Tour Packages in Ayodhya, Varanasi and Prayagraj')</title>
+    <meta name="description" content="@yield('meta_description', 'Default description of your site.')">
 
-    {{-- Open Graph (for social media) --}}
     <meta property="og:title" content="Divya Dham Guide Association - @yield('title')">
     <meta property="og:description" content="@yield('meta_description', 'Spiritual tour packages in Ayodhya, Varanasi & Prayagraj. 24/7 tour and travel agency for pilgrimage, darshan, and cultural journeys.')">
     <meta property="og:type" content="website">

@@ -1,6 +1,9 @@
 @extends('layout')
 
-@section('title', 'About')
+@section('title', 'Divya Dham Guide Association – Trusted Spiritual Tours & Guides')
+@section('meta_description', 'Book your pilgrimage with expert spiritual guides across Ayodhya, Varanasi & Prayagraj. From ritual experiences to heritage tours, we guide you with devotion & care.')
+
+
 
 @section('content')
 

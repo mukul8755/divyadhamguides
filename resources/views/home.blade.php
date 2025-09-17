@@ -1,6 +1,8 @@
 @extends('layout')
 
-@section('title', 'Home')
+@section('title', 'Best Spiritual Tour Packages in Ayodhya, Varanasi and Prayagraj')
+@section('meta_description', 'Spiritual tour packages in Ayodhya, Varanasi & Prayagraj. 24/7 tour and travel agency for pilgrimage, darshan, and cultural journeys. Contact us Today!')
+
 
 @section('content')
 

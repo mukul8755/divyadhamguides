@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title', 'Book professional tour guides in Ayodhya Varanasi Prayagraj')
+@section('meta_description', 'Book professional tour guides in Ayodhya, Varanasi & Prayagraj. Contact us for local guide booking, Ram Mandir pilgrimage tours & spiritual journeys.')
+
+
 @section('content')
 
 <!-- Hero Section -->

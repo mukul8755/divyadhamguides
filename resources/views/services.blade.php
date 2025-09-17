@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title', 'Affordable tour and travel services | Ayodhya, Varanasi & Prayagraj')
+@section('meta_description', 'Affordable tour and travel services in Prayagraj with trusted local guides in Ayodhya. 24/7 spiritual travel support across Ayodhya, Varanasi & Prayagraj.')
+
+
 @section('content')
 
 <!-- Page Header -->
