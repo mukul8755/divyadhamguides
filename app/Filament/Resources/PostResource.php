@@ -60,13 +60,13 @@ class PostResource extends Resource
                     ->columnSpan('full'),
 
 
-FileUpload::make('featured_image')
-    ->label('Featured Image')
-    ->image()
-    ->directory('posts')
-    ->disk('public')
-    ->imagePreviewHeight('250')
-    ->nullable(),
+                FileUpload::make('featured_image')
+                    ->label('Featured Image')
+                    ->image()
+                    ->directory('posts')
+                    ->disk('public')
+                    ->imagePreviewHeight('250')
+                    ->nullable(),
 
 
 

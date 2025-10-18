@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FestivalController;
 
 
 Route::get('/', [PageController::class, 'home']);
@@ -35,6 +36,9 @@ Route::get('/admin/contacts', [ContactController::class, 'index'])->name('contac
 Route::get('/admin/contacts/data', [ContactController::class, 'getData'])->name('contacts.data');
 
 
+
+
+Route::get('/api/festival', [FestivalController::class, 'activeFestival']);
 
 Route::options('{any}', function () {
     return response()->noContent();
