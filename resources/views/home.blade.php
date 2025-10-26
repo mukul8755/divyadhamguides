@@ -73,7 +73,7 @@
     <div class="popup-form position-relative p-4 rounded shadow-lg bg-white">
         <span class="close-popup position-absolute top-0 end-0 m-3 fs-3" id="closePopupBtn">&times;</span>
 
-        <img id="festivalImage" class="img-fluid mb-3 rounded shadow-sm" alt="Festival" style="display:none;">
+        <img id="festivalImage" class="img-fluid mb-3 rounded shadow-sm" alt="Festival" style="display:none;height: 120px;">
         <h2 id="festivalTitle" class="mb-3 text-danger">Book a Tour</h2>
         <p id="festivalDate" class="text-muted mb-2"></p>
         <div id="festivalDescription" class="mb-3 text-secondary"></div>
