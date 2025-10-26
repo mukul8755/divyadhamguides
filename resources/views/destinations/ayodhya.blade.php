@@ -1051,7 +1051,7 @@
 
   <div class="packages-grid">
     <!-- Package 1 -->
-    <div class="pkg-card">
+    <div class="pkg-card" style="width: 100%;">
       <div class="pkg-body">
         <div class="pkg-title">Makhoda Dham - Sacred Origin Experience (Additional Package)</div>
         <div class="pkg-duration">Duration: 1N / 2D</div>
