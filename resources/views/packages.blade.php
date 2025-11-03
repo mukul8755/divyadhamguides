@@ -42,7 +42,7 @@
             <h5 class="fw-bold text-danger">Ayodhya Yatra (2 Days)</h5>
             <p class="text-muted">Includes Ram Mandir, Hanuman Garhi, Saryu Aarti, Bharat Kund, Kanak Bhawan and local pickup/drop.</p>
             <div class="d-flex gap-2 mt-3">
-              <a href="destinations/2" class="btn btn-outline-danger btn-sm">More Details</a>
+              <a href="destinations/ayodhya-ram-mandir-darshan-booking-tour-packages" class="btn btn-outline-danger btn-sm">More Details</a>
               <a href="https://wa.me/919109507691" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
             </div>
           </div>
