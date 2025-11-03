@@ -64,7 +64,7 @@
     .btn-gold:hover {
       background: linear-gradient(90deg, #ffb300, #ffe45c);
       transform: translateY(-3px);
-    }
+    } 
 
     .btn-outline-red {
       background: transparent;
@@ -311,6 +311,98 @@
     flex-direction: row;
     text-align: left;
     padding: 15px;
+  }
+}
+
+#temple-activities {
+  background: #fff9ef;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #b17a00;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.temple-card {
+  background: #fff;
+  border: 2px solid #f2e2b3;
+  transition: all 0.3s ease-in-out;
+}
+
+.temple-card:hover {
+  transform: translateY(-5px);
+  border-color: #d9a441;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.temple-header h3 {
+  color: #d98e04;
+  font-weight: 600;
+}
+
+.temple-list li {
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.badge-gold {
+  background: linear-gradient(45deg, #f1b93d, #f9df7c);
+  color: #5a3e00;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.badge-light {
+  background: #f4f4f4;
+  color: #444;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn-enquire,
+.btn-call {
+  display: inline-block;
+  background: #d98e04;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-enquire:hover {
+  background: #ffba35;
+  color: #000;
+}
+
+.btn-call {
+  background: #198754;
+}
+
+.btn-call:hover {
+  background: #24c576;
+}
+
+.note {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .temple-card {
+    padding: 20px;
   }
 }
 
@@ -679,7 +771,7 @@
   
   <!-- HERO -->
   <section class="hero">
-    <h1>Ayodhya Ram Mandir Darshan & Tour Packages</h1>
+    <h1>Ayodhya Ram Mandir Darshan Booking & Tour Packages</h1>
     <p>Experience divine blessings in Ayodhya with our comfortable and spiritual tour packages — VIP Darshan, stay, transport & certified guides.</p>
     <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
       <a href="/contact" class="btn btn-gold">Book Ayodhya Package</a>
@@ -724,7 +816,7 @@
     <!-- Package 1 -->
     <div class="pkg-card">
       <div class="pkg-body">
-        <div class="pkg-title">Ayodhya Local Sightseeing</div>
+        <div class="pkg-title">Sugam Ayodhya Darshan</div>
         <div class="pkg-duration">Duration: 1N / 2D</div>
         <div class="pkg-rating">★★★★★</div>
         <ul class="pkg-list">
@@ -743,7 +835,7 @@
     <!-- Package 2 -->
     <div class="pkg-card">
       <div class="pkg-body">
-        <div class="pkg-title">Ayodhya VIP Darshan</div>
+        <div class="pkg-title">Ayodhya VIP Darshan Booking</div>
             <div class="pkg-duration">Duration: 1N / 2D</div>
             <div class="pkg-rating">★★★★★</div>
         <ul class="pkg-list">
@@ -975,6 +1067,77 @@
   </div>
 </section>
 
+<!-- Temple Activities Section -->
+<section id="temple-activities" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-3">What Can You Attend Inside the Temples?</h2>
+    <p class="section-subtitle mb-5">
+      (Ram Mandir and Hanuman Garhi – Main Rituals Organized by Divya Dham Guides)
+    </p>
+
+    <div class="row justify-content-center gy-4">
+
+      <!-- Ram Mandir -->
+      <div class="col-lg-6 col-md-10 mb-4">
+        <div class="temple-card ram-mandir p-4 rounded shadow-sm h-100">
+          <div class="temple-header d-flex align-items-center mb-3">
+            <div class="icon fs-2 me-3">🛕</div>
+            <div class="text-start">
+              <h3 class="mb-0">Inside Ram Mandir</h3>
+              <small class="text-muted">(Main Ceremonies & Offerings)</small>
+            </div>
+          </div>
+          <ul class="temple-list list-unstyled text-start">
+            <li>• Mangla Aarti</li>
+            <li>• Shringar Aarti</li>
+            <li>• Shayan Aarti</li>
+            <li>• Chhappan Bhog (56 Food Offerings)</li>
+          </ul>
+          <div class="temple-actions mt-3">
+            <span class="badge-gold d-inline-block mb-2">Attend with Us</span><br>
+            <a href="/contact" class="btn-enquire">Enquire / Book</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hanuman Garhi -->
+      <div class="col-lg-6 col-md-10 mb-4">
+        <div class="temple-card hanuman-garhi p-4 rounded shadow-sm h-100">
+          <div class="temple-header d-flex align-items-center mb-3">
+            <div class="icon fs-2 me-3">🙏</div>
+            <div class="text-start">
+              <h3 class="mb-0">Inside Hanuman Garhi</h3>
+              <small class="text-muted">(Special Prayers & Rituals)</small>
+            </div>
+          </div>
+          <ul class="temple-list list-unstyled text-start">
+            <li>✨ Chola Daan</li>
+            <li>🌸 Mangla Aarti & Bhog</li>
+            <li>🌞 Evening Aarti & Bhog</li>
+            <li>📿 Hanuman Chalisa Path</li>
+            <li>📖 Sundarkand Path</li>
+            <li>🔥 Special Havan inside the temple</li>
+            <li class="highlight mt-2">
+              You can personally offer <span class="fw-bold text-warning">56 Bhog</span> arrangements as well.
+            </li>
+          </ul>
+          <div class="temple-actions mt-3">
+            <span class="badge-light d-inline-block mb-2">Special Arrangements</span><br>
+            <a href="tel:+919109507691" class="btn-call">Call to Book</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="note mt-5">
+      <strong>Note:</strong> Divya Dham Guides arranges all temple schedules, Bhog offerings, and Priest Guides for you — 
+      <a href="/contact" class="text-decoration-underline text-warning">Book / Enquire</a> or Call: 
+      <a href="tel:+919109507691" class="text-warning">+91 9109507691</a>
+    </p>
+  </div>
+</section>
+
 
   <!-- FREE CALL SECTION -->
   <section class="free-call-section">
@@ -1018,7 +1181,7 @@
         <div class="day-plan">
           <h4>🌅 Day 2: Saryu Aarti & Departure</h4>
           <ul>
-            <li>Evening <strong>Saryu River Aarti (6:00 PM – 8:00 PM)</strong> & divine light view.</li>
+            <li>Evening <strong>Saryu Ghat Aarti time(6:00 PM – 8:00 PM) & Divine Light View.</li>
             <li>Return to hotel for breakfast.</li>
             <li>Relax & checkout from the hotel.</li>
             <li><strong>Hassle-free transfer</strong> to Ayodhya Railway Station / Airport.</li>
@@ -1260,7 +1423,7 @@
         <div class="timeline-item">
           <div class="timeline-number">10</div>
           <div class="timeline-content">
-            <h5>Raj Shadan</h5>
+            <h5>Raj Sadan</h5>
             <p> It is the royal residence of Ayodhya’s King, where he currently lives — a must-visit spot symbolizing Ayodhya’s royal heritage.</p>
           </div>
         </div>
@@ -1278,6 +1441,6 @@
       <a href="/contact" class="btn btn-gold">Plan Your Trip</a>
       <a href="tel:+919109507691" class="btn btn-outline-light">Call for Assistance</a>
     </div>
-  </section>
+  </section> 
   
 @endsection
