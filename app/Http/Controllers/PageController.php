@@ -29,7 +29,7 @@ class PageController extends Controller
                 "Shopping for Banarasi Sarees and handicrafts"
             ]
         ],
-        2 => [
+        "ayodhya-ram-mandir-darshan-booking-tour-packages" => [
             "title" => "Ayodhya Darshan",
             "image" => "images/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg",
             "intro" => "<b>Ayodhya,</b> the birthplace of Lord Shri Ram, is a sacred city filled with devotion...",
