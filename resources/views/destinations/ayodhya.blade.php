@@ -367,29 +367,39 @@
   font-weight: 600;
 }
 
-.btn-enquire,
-.btn-call {
+/* Button Styles */
+.btn-yellow {
   display: inline-block;
-  background: #d98e04;
+  background: linear-gradient(45deg, #ffcc00, #ffdd55);
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+.btn-yellow:hover {
+  background: linear-gradient(45deg, #ffb700, #ffe066);
+  transform: translateY(-3px);
+}
+
+.btn-green {
+  display: inline-block;
+  background: linear-gradient(45deg, #198754, #25d366);
   color: #fff;
   padding: 10px 25px;
   border-radius: 30px;
-  text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(25, 135, 84, 0.4);
 }
 
-.btn-enquire:hover {
-  background: #ffba35;
-  color: #000;
-}
-
-.btn-call {
-  background: #198754;
-}
-
-.btn-call:hover {
-  background: #24c576;
+.btn-green:hover {
+  background: linear-gradient(45deg, #24c576, #198754);
+  transform: translateY(-3px);
 }
 
 .note {
@@ -404,7 +414,12 @@
   .temple-card {
     padding: 20px;
   }
+  .btn-yellow, .btn-green {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
+
 
 
     /* ========== FREE CALL SECTION ========== */
@@ -1067,7 +1082,7 @@
   </div>
 </section>
 
-<!-- Temple Activities Section -->
+<!-- Temple Activities Section --> 
 <section id="temple-activities" class="py-5">
   <div class="container text-center">
     <h2 class="section-title mb-3">What Can You Attend Inside the Temples?</h2>
@@ -1092,10 +1107,14 @@
             <li>• Shringar Aarti</li>
             <li>• Shayan Aarti</li>
             <li>• Chhappan Bhog (56 Food Offerings)</li>
+            <li class="highlight mt-2">
+              You can personally offer <span class="fw-bold text-warning">56 Bhog</span> arrangements as well.
+            </li>
           </ul>
-          <div class="temple-actions mt-3">
-            <span class="badge-gold d-inline-block mb-2">Attend with Us</span><br>
-            <a href="/contact" class="btn-enquire">Enquire / Book</a>
+          <div class="temple-actions mt-4 text-center">
+            <span class="badge-light d-inline-block mb-2">Attend with Us</span><br>
+            <a href="/contact" class="btn-yellow me-2">Book Now</a>
+            <a href="tel:+919109507691" class="btn-green">Call Now</a>
           </div>
         </div>
       </div>
@@ -1117,13 +1136,11 @@
             <li>📿 Hanuman Chalisa Path</li>
             <li>📖 Sundarkand Path</li>
             <li>🔥 Special Havan inside the temple</li>
-            <li class="highlight mt-2">
-              You can personally offer <span class="fw-bold text-warning">56 Bhog</span> arrangements as well.
-            </li>
           </ul>
-          <div class="temple-actions mt-3">
+          <div class="temple-actions mt-4 text-center">
             <span class="badge-light d-inline-block mb-2">Special Arrangements</span><br>
-            <a href="tel:+919109507691" class="btn-call">Call to Book</a>
+            <a href="/contact" class="btn-yellow me-2">Book Now</a>
+            <a href="tel:+919109507691" class="btn-green">Call Now</a>
           </div>
         </div>
       </div>
