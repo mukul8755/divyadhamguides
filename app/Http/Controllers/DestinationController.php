@@ -55,8 +55,6 @@ class DestinationController extends Controller
             "image" => "images/prayagraj sangam.avif",
             "intro" => "Prayagraj (formerly Allahabad), is one of the holiest cities of India, where the sacred confluence of the Ganga, Yamuna, and the mythical Saraswati rivers takes place. This city hosts the Kumbh Mela, the world's largest spiritual gathering. A visit to Prayagraj offers divine peace, historic temples, and spiritual awakening",
             "attractions" => [
-              
-                
                 ["img" => "images/prayagraj/triveni sangam.jpg", "title" => "Triveni Sangam", "desc" => "Ancient temple of Lord Hanuman."],
 
                 ["img" => "images/prayagraj/hanuman-ji-mandir-in-prayagraj.jpg", "title" => "Bade Hanuman Ji", "desc" => "A unique lying posture idol of Lord Hanuman, submerged during high tide – extremely revered."],
@@ -77,6 +75,26 @@ class DestinationController extends Controller
                 "Participate in evening Saryu Aarti",
                 "Walk through Ram Ki Paidi and nearby ghats"
             ]
+        ],
+        "ujjain-mahakal-mandir-booking-tour-packages" => [
+            "title" => "Mahakaleshwar Bhasma Aarti Experience",
+            "image" => "images/ujjain-mahakal-temple.avif",
+            "intro" => "Witness the one-of-a-kind Bhasma Aarti at the Mahakaleshwar Jyotirlinga — early morning spiritual ritual with priest assistance.",
+            "attractions" => [
+                
+            ],
+            "packages" => "Explore Ayodhya’s divine temples and spiritual sites with complete guidance and local hospitality.",
+            "activities" => [
+                "Boat ride during sunrise on the Saryu",
+                "Attend Ramayana recitation or Bhajans",
+                "Participate in evening Saryu Aarti",
+                "Walk through Ram Ki Paidi and nearby ghats"
+            ],
+            "additional_attractions" => [
+                ["img" => "images/ayodhya/chhapiya temple1.jpeg", "title" => "Chhapiya Temple (Gonda)", "desc" => "Birthplace of Swaminarayan."],
+                ["img" => "images/ayodhya/devi patan mandir.jpg", "title" => "Devipatan Temple (Balrampur)", "desc" => "Shaktipeeth of Maa Durga."],
+                // Add more if needed
+            ],
         ],
 
 
@@ -99,7 +117,9 @@ class DestinationController extends Controller
 
         if($id == "ayodhya-ram-mandir-darshan-booking-tour-packages") {
             return view('destinations.ayodhya');
-        }else {
+        }else if($id == "ujjain-mahakal-mandir-booking-tour-packages")
+            return view('destinations.ujjain');
+        else {
             return view('destinations.show', compact('destination'));
         }
     }

@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
 
-     private $destinations = [
+    private $destinations = [
         1 => [
             "title" => "Kashi Darshan",
             "image" => "images/kashipic.jpg",
@@ -38,6 +38,8 @@ class PageController extends Controller
                 ["img" => "images/ayodhya/hanuman garhi.jpg", "title" => "Hanuman Garhi", "desc" => "Ancient temple of Lord Hanuman."],
                 ["img" => "images/ayodhya/saryu r.jpg", "title" => "Saryu River Ghat", "desc" => "Holy river with divine Aarti..."],
                 ["img" => "images/ayodhya/1-kanak-bhawan-ayodhya.jpg", "title" => "Kanak Bhawan", "desc" => "Temple of Ram-Sita..."],
+                ["img" => "images/ayodhya/Prachin-Surya-Kund-Mandir.jpg", "title" => "Surya Kund", "desc" => "Water tank associated with Surya Dev..."],
+                ["img" => "images/ayodhya/guptar ghat.jpg", "title" => "Guptar Ghat", "desc" => "Where Lord Ram took Jal Samadhi..."],
             ],
             "packages" => "Explore Ayodhya’s divine temples and spiritual sites with complete guidance and local hospitality.",
             "activities" => [
@@ -45,15 +47,18 @@ class PageController extends Controller
                 "Attend Ramayana recitation or Bhajans",
                 "Participate in evening Saryu Aarti",
                 "Walk through Ram Ki Paidi and nearby ghats"
-            ]
+            ],
+            "additional_attractions" => [
+                ["img" => "images/ayodhya/chhapiya temple1.jpeg", "title" => "Chhapiya Temple (Gonda)", "desc" => "Birthplace of Swaminarayan."],
+                ["img" => "images/ayodhya/devi patan mandir.jpg", "title" => "Devipatan Temple (Balrampur)", "desc" => "Shaktipeeth of Maa Durga."],
+                // Add more if needed
+            ],
         ],
-         3 => [
+        3 => [
             "title" => "Prayagraj Darshan",
             "image" => "images/prayagraj sangam.avif",
             "intro" => "Prayagraj (formerly Allahabad), is one of the holiest cities of India, where the sacred confluence of the Ganga, Yamuna, and the mythical Saraswati rivers takes place. This city hosts the Kumbh Mela, the world's largest spiritual gathering. A visit to Prayagraj offers divine peace, historic temples, and spiritual awakening",
             "attractions" => [
-              
-                
                 ["img" => "images/prayagraj/triveni sangam.jpg", "title" => "Triveni Sangam", "desc" => "Ancient temple of Lord Hanuman."],
 
                 ["img" => "images/prayagraj/hanuman-ji-mandir-in-prayagraj.jpg", "title" => "Bade Hanuman Ji", "desc" => "A unique lying posture idol of Lord Hanuman, submerged during high tide – extremely revered."],
@@ -75,6 +80,29 @@ class PageController extends Controller
                 "Walk through Ram Ki Paidi and nearby ghats"
             ]
         ],
+        "ujjain-mahakal-mandir-booking-tour-packages" => [
+            "title" => "Mahakaleshwar Bhasma Aarti Experience",
+            "image" => "images/ujjain-mahakal-temple.avif",
+            "intro" => "Witness the one-of-a-kind Bhasma Aarti at the Mahakaleshwar Jyotirlinga — early morning spiritual ritual with priest assistance.",
+            "attractions" => [
+                
+            ],
+            "packages" => "Explore Ayodhya’s divine temples and spiritual sites with complete guidance and local hospitality.",
+            "activities" => [
+                "Boat ride during sunrise on the Saryu",
+                "Attend Ramayana recitation or Bhajans",
+                "Participate in evening Saryu Aarti",
+                "Walk through Ram Ki Paidi and nearby ghats"
+            ],
+            "additional_attractions" => [
+                ["img" => "images/ayodhya/chhapiya temple1.jpeg", "title" => "Chhapiya Temple (Gonda)", "desc" => "Birthplace of Swaminarayan."],
+                ["img" => "images/ayodhya/devi patan mandir.jpg", "title" => "Devipatan Temple (Balrampur)", "desc" => "Shaktipeeth of Maa Durga."],
+                // Add more if needed
+            ],
+        ],
+
+
+
     ];
 
     public function home() {

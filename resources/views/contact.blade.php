@@ -70,11 +70,11 @@
           </div>
 
           <div class="social-icons mt-4 d-flex gap-3">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/share/17CGcyuxnF/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/divyadhamguides?igsh=aGExa3doM2pydTYx" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://youtube.com/@divyadhamguides?si=5n9-vr-koyLsuYjm" class="social-icon"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
