@@ -192,21 +192,19 @@
         <div class="container text-center">
             <h2 class="fw-bold text-danger mb-5">Darshan Packages</h2>
             <div class="row g-4">
-                @foreach ($destinations as $id => $destination)
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card shadow-sm border-0 rounded-4 h-100 package-card">
-                            <img src="{{ asset($destination['image']) }}" class="card-img-top rounded-top-4"
-                                alt="{{ $destination['title'] }}">
-                            <div class="card-body text-start">
-                                <h5 class="fw-bold text-danger">{{ $destination['title'] }}</h5>
-                                <p class="text-muted">{{ Str::limit(strip_tags($destination['intro']), 100) }}</p>
-                                <a href="{{ route('destinations.show', $id) }}"
-                                    class="btn btn-outline-danger btn-sm rounded-pill px-3">
-                                    Explore More
-                                </a>
-                            </div>
+                @foreach($destinations as $id => $destination)
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100 border-0 rounded-3 position-relative">
+                        <img src="{{ asset($destination['image']) }}" class="card-img-top" alt="{{ $destination['title'] }}">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-danger">{{ $destination['title'] }}</h5>
+                            <p class="text-muted">{{ Str::limit(strip_tags($destination['intro']), 100) }}</p>
+
+                            <!-- This link makes the whole card clickable -->
+                            <a href="{{ route('destinations.show', $id) }}" class="stretched-link btn btn-outline-danger btn-sm">Explore More</a>
                         </div>
                     </div>
+                </div>
                 @endforeach
             </div>
         </div>

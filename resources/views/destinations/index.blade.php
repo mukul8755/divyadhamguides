@@ -11,18 +11,20 @@
 <section class="py-5">
   <div class="container">
     <div class="row g-4">
-      @foreach($destinations as $id => $destination)
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100 border-0 rounded-3">
-          <img src="{{ asset($destination['image']) }}" class="card-img-top" alt="{{ $destination['title'] }}">
-          <div class="card-body">
-            <h5 class="fw-bold text-danger">{{ $destination['title'] }}</h5>
-            <p class="text-muted">{{ Str::limit(strip_tags($destination['intro']), 100) }}</p>
-            <a href="{{ route('destinations.show', $id) }}" class="btn btn-outline-danger btn-sm">Explore More</a>
+        @foreach($destinations as $id => $destination)
+          <div class="col-md-6 col-lg-4">
+              <div class="card shadow-sm h-100 border-0 rounded-3 position-relative">
+                  <img src="{{ asset($destination['image']) }}" class="card-img-top" alt="{{ $destination['title'] }}">
+                  <div class="card-body">
+                      <h5 class="fw-bold text-danger">{{ $destination['title'] }}</h5>
+                      <p class="text-muted">{{ Str::limit(strip_tags($destination['intro']), 100) }}</p>
+
+                      <!-- This link makes the whole card clickable -->
+                      <a href="{{ route('destinations.show', $id) }}" class="stretched-link btn btn-outline-danger btn-sm">Explore More</a>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-      @endforeach
+          @endforeach
     </div>
   </div>
 </section>

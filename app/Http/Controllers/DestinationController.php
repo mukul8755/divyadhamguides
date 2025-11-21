@@ -77,9 +77,9 @@ class DestinationController extends Controller
             ]
         ],
         "ujjain-mahakal-mandir-booking-tour-packages" => [
-            "title" => "Mahakaleshwar Bhasma Aarti Experience",
+            "title" => "Mahakal Darshan Online Booking",
             "image" => "images/ujjain-mahakal-temple.avif",
-            "intro" => "Witness the one-of-a-kind Bhasma Aarti at the Mahakaleshwar Jyotirlinga — early morning spiritual ritual with priest assistance.",
+            "intro" => "Experience the blessings of Mahakaleshwar Jyotirlinga without hassle. Use our online booking service for quick and easy Mahakal Darshan.",
             "attractions" => [
                 
             ],
