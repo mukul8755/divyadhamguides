@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DestinationController extends Controller
 {
     private $destinations = [
-        1 => [
+        "kashi" => [
             "title" => "Kashi Darshan",
             "image" => "images/kashipic.jpg",
             "intro" => "<b>Kashi (Varanasi)</b>, the spiritual capital of India, is one of the oldest living cities in the world...",
@@ -50,7 +50,7 @@ class DestinationController extends Controller
                 // Add more if needed
             ],
         ],
-        3 => [
+        "prayagraj" => [
             "title" => "Prayagraj Darshan",
             "image" => "images/prayagraj sangam.avif",
             "intro" => "Prayagraj (formerly Allahabad), is one of the holiest cities of India, where the sacred confluence of the Ganga, Yamuna, and the mythical Saraswati rivers takes place. This city hosts the Kumbh Mela, the world's largest spiritual gathering. A visit to Prayagraj offers divine peace, historic temples, and spiritual awakening",
