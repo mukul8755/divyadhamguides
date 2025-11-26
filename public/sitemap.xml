@@ -28,7 +28,7 @@
     <loc>http://localhost/association</loc>
     <priority>0.9</priority>
             </url>
-    <url>
+    <url> 
     <loc>http://localhost/travel-support</loc>
     <priority>0.9</priority>
             </url>
