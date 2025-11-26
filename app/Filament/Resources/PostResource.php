@@ -28,7 +28,6 @@ class PostResource extends Resource
     {
         return $form
             ->schema([
-       
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->reactive() // triggers every time user types
@@ -38,6 +37,11 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('meta_title')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('meta_description')
+                    ->required(),
                 Forms\Components\RichEditor::make('content')
                     ->required()
                     ->toolbarButtons([

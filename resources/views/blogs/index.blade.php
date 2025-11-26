@@ -15,19 +15,40 @@
   <div class="container">
     <div class="row g-4">
 
-      @foreach($blogs as $id =>$blog)
+      @foreach($blogs as $id => $blog)
       <div class="col-md-6 col-lg-4">
-        <div class="card blog-card h-100 shadow-sm border-0 rounded-3 hover-blog">
-          <img src="{{ asset('storage/' . $blog->featured_image) }}"  class="card-img-top" alt="{{ $blog['title'] }}">
-          <div class="card-body">
-            <div class="blog-meta text-muted small mb-2">
-              By <strong>{{ $blog->author->name ?? 'Unknown' }}</strong> | {{ $blog->created_at->format('F j, Y, g:i a') }}
+
+        <!-- Full Card Clickable -->
+        <a href="{{ route('blogs.show', $blog->slug) }}" class="text-decoration-none text-dark">
+          <div class="card blog-card h-100 shadow-sm border-0 rounded-3 hover-blog">
+
+            <img src="{{ asset('storage/' . $blog->featured_image) }}"
+                 class="card-img-top"
+                 alt="{{ $blog->title }}">
+
+            <div class="card-body">
+
+              <div class="blog-meta text-muted small mb-2">
+                By <strong>{{ $blog->author->name ?? 'Unknown' }}</strong> |
+                {{ $blog->created_at->format('F j, Y') }}
+              </div>
+
+              <!-- MAIN TITLE -->
+              <h5 class="fw-bold text-danger">{{ $blog->title }}</h5>
+
+              <!-- CATEGORY -->
+              <p class="mt-2 mb-0">
+                <span class="badge bg-danger-subtle text-danger fw-semibold">
+                  {{ $blog->category->name ?? 'Uncategorized' }}
+                </span>
+                
+              </p>
+            
             </div>
-            <h5 class="fw-bold text-danger">{{ $blog['title'] }}</h5>
-              <p>Category: {{ $blog->category->name ?? 'Uncategorized' }}</p>
-            <a href="{{ route('blogs.show', $blog->slug) }}" class="btn btn-outline-danger btn-sm mt-2">Read More</a>
+              <a href="{{ route('blogs.show', $blog->slug) }}" class="btn btn-outline-danger btn-sm mt-2">Read More</a>
           </div>
-        </div>
+        </a>
+
       </div>
       @endforeach
 
@@ -36,6 +57,7 @@
 </section>
 
 @endsection
+
 
 @push('styles')
 <style>
@@ -48,8 +70,13 @@
   }
   .blog-card img {
     height: 220px;
+    width: 100%;
     object-fit: cover;
     border-radius: 0.5rem 0.5rem 0 0;
+  }
+  a.text-decoration-none:hover h5,
+  a.text-decoration-none:hover {
+    color: #b30000 !important;
   }
 </style>
 @endpush

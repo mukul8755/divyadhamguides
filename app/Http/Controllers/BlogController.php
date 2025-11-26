@@ -14,6 +14,7 @@ class BlogController extends Controller
     {
          $blogs = Post::with(['author', 'category'])
                 ->where('status','published')   
+                ->orderBy('created_at', 'desc')
                 ->get();
         return view('blogs.index', compact('blogs'));
     }

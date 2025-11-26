@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Divya Dham Guide Association - @yield('title')</title>
-    
+
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -28,7 +27,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <title>@yield('title', 'Best Spiritual Tour Packages in Ayodhya, Varanasi and Prayagraj')</title>
+    <title>@yield('title', 'Best Spiritual Tour Packages in Ayodhya, Varanasi and Prayagraj')</title>
     <meta name="description" content="@yield('meta_description', 'Default description of your site.')">
 
     <meta property="og:title" content="Divya Dham Guide Association - @yield('title')">
