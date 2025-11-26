@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+
 Sitemap: https://divyadhamguides.com/sitemap.xml
