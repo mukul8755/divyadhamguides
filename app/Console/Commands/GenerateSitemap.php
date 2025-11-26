@@ -40,7 +40,7 @@ class GenerateSitemap extends Command
         // ---------- Blog URLs ----------
         foreach (Post::all() as $blog) {
             $sitemap->add(
-                Url::create("/blogs/" . $blog->id)
+                Url::create("/blogs/" . $blog->slug)
                    ->setChangeFrequency('weekly')
                    ->setPriority(0.8)
             );
