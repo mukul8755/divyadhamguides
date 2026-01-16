@@ -434,11 +434,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 success: function() {
                     Notiflix.Loading.remove();
                     $('#popupMessage').removeClass('d-none').text("Your message has been submitted successfully!");
-                    setTimeout(() => {
-                        $('#popupOverlay').hide();
-                        $('#popupMessage').addClass('d-none').text("");
-                        $('#contactFormPopup')[0].reset();
-                    }, 2000);
+                    // thiankx page redirection
+                    location.href = "{{ route('thanks') }}";
                 },
                 error: function(xhr) {
                     Notiflix.Loading.remove();

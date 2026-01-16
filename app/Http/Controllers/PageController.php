@@ -159,6 +159,10 @@ class PageController extends Controller
         }
     }
 
+    public function thanks() {
+        return view('thankyou');
+    }
+
 
 
 }

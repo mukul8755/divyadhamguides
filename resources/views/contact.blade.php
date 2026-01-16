@@ -106,8 +106,7 @@ $(document).ready(function () {
             data: formData,
             success: function (response) {
                 Notiflix.Loading.remove(); // hide loader
-                Notiflix.Notify.success("Your message has been submitted successfully!");
-                $('#contactForm')[0].reset(); // reset form
+                location.href = "{{ route('thanks') }}";
             },
             error: function (xhr) {
                 Notiflix.Loading.remove(); // hide loader

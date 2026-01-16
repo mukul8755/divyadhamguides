@@ -40,6 +40,9 @@ Route::get('/admin/contacts/data', [ContactController::class, 'getData'])->name(
 
 Route::get('/api/festival', [FestivalController::class, 'activeFestival']);
 
+// thanks page 
+Route::get('/thanks', [PageController::class, 'thanks'])->name('thanks');
+
 
 Route::get('/sitemap.xml', function () {
     return response()->file(public_path('sitemap.xml'));
