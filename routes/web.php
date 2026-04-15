@@ -25,8 +25,22 @@ Route::get('/sendMail', [PageController::class, 'sendMail']);
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('blogs.show');
 
-Route::get('/destinations', [DestinationController::class, 'index'])->name('destinations.index');
-Route::get('/destinations/{id}', [DestinationController::class, 'show'])->name('destinations.show');
+// Destinations
+Route::controller(DestinationController::class)->group(function () {
+
+    Route::get('/ayodhya-ram-mandir-darshan-booking-tour-packages', 'ayodhya')->name('ayodhya');
+
+    Route::get('/kashi-vishwanath-darshan-booking-tour-packages', 'kashi')->name('kashi');
+
+    Route::get('/prayagraj-sangam-kumbh-nagari-darshan-tour-packages', 'prayagraj')->name('prayagraj');
+
+    Route::get('/omkareshwar-jyotirlinga-darshan-booking-tour-packages', 'omkareshwar')->name('omkareshwar');
+
+    Route::get('/ujjain-mahakal-mandir-booking-tour-packages', 'mahakaleshwar')->name('mahakaleshwar');
+
+    Route::get('/maa-baglamukhi-nalkheda-dham-darshan-booking-puja-services', 'baglamukhi')->name('baglamukhi');
+
+});
 
 // save the contact
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

@@ -26,7 +26,7 @@
           <i class="fas fa-gopuram fa-3x text-danger mb-3"></i>
           <h5 class="fw-bold">Temple Darshan</h5>
           <p class="text-muted">Personalized darshan assistance at Kashi Vishwanath, Ram Mandir, Hanuman Garhi, and more.</p>
-           <a href="destinations" class="btn btn-outline-danger mt-3">Know More</a>
+           <a href="/packages" class="btn btn-outline-danger mt-3">Know More</a>
         </div>
       </div>
 

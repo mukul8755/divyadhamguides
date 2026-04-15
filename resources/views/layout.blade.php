@@ -4,11 +4,22 @@
 <head>
     <meta charset="UTF-8">
 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KG2CVF9W');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KG2CVF9W');
+    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-53NFYKVWNN"></script>
 
@@ -93,7 +104,7 @@
 <body>
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG2CVF9W"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Header -->
     <header>
@@ -128,9 +139,64 @@
                         <li class="nav-item"><a
                                 class="nav-link {{ request()->is('packages') ? 'active text-danger fw-bold' : '' }}"
                                 href="/packages">Packages</a></li>
-                        <li class="nav-item"><a
-                                class="nav-link {{ request()->is('destinations') ? 'active text-danger fw-bold' : '' }}"
-                                href="/destinations">Destinations</a></li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle 
+                                {{ in_array(Route::currentRouteName(), ['ayodhya','kashi','prayagraj','mahakaleshwar','omkareshwar','baglamukhi']) ? 'active text-danger fw-bold' : '' }}"
+                                href="#"
+                                data-bs-toggle="dropdown">
+
+                                Destinations
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item {{ Route::currentRouteName() == 'ayodhya' ? 'active text-danger fw-bold' : '' }}"
+                                        href="{{ route('ayodhya') }}">
+                                        Ayodhya Ram Mandir
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {{ Route::currentRouteName() == 'kashi' ? 'active text-danger fw-bold' : '' }}"
+                                        href="{{ route('kashi') }}">
+                                        Kashi Vishwanath
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {{ Route::currentRouteName() == 'prayagraj' ? 'active text-danger fw-bold' : '' }}"
+                                        href="{{ route('prayagraj') }}">
+                                        Prayagraj
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {{ Route::currentRouteName() == 'mahakaleshwar' ? 'active text-danger fw-bold' : '' }}"
+                                        href="{{ route('mahakaleshwar') }}">
+                                        Mahakaleshwar
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {{ Route::currentRouteName() == 'omkareshwar' ? 'active text-danger fw-bold' : '' }}"
+                                        href="{{ route('omkareshwar') }}">
+                                        Omkareshwar
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {{ Route::currentRouteName() == 'baglamukhi' ? 'active text-danger fw-bold' : '' }}"
+                                        href="{{ route('baglamukhi') }}">
+                                        Baglamukhi
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
                         <li class="nav-item"><a
                                 class="nav-link {{ request()->is('blogs') ? 'active text-danger fw-bold' : '' }}"
                                 href="/blogs">Blogs</a></li>
@@ -146,7 +212,6 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         @yield('content')
     </main>
@@ -154,7 +219,7 @@
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2025 Divya Dham Guides Association. All rights reserved.</p>
+            <p>&copy; 2026 Divya Dham Guides Association. All rights reserved.</p>
             <p>
                 <a href="https://www.facebook.com/share/17CGcyuxnF/"><i class="fab fa-facebook-f me-2"></i></a>
                 <a href="https://www.instagram.com/divyadhamguides?igsh=aGExa3doM2pydTYx"><i
@@ -184,6 +249,9 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("destBtn").addEventListener("click", function() {
+                document.getElementById("destDropdown").classList.toggle("show");
+            });
             const toggler = document.querySelector('.navbar-toggler');
             const togglerIcon = toggler.querySelector('i');
             const navbarCollapse = document.getElementById('navbarNav');

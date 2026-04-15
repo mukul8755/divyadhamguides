@@ -64,6 +64,51 @@
         </div>
       </div>
 
+      <!-- Ujjain Package -->
+<div class="col-md-4">
+  <div class="card package-card h-100 shadow-lg border-0 rounded-3 hover-card">
+    <img src="{{ asset('images/ujjain2.jpg') }}" class="card-img-top rounded-top" alt="Ujjain Package">
+    <div class="card-body">
+      <h5 class="fw-bold text-danger">Ujjain Mahakal Darshan</h5>
+      <p class="text-muted">Mahakaleshwar Jyotirlinga Darshan, Bhasma Aarti, Kal Bhairav Temple, Harsiddhi Mata visit.</p>
+      <div class="d-flex gap-2 mt-3">
+        <a href="destinations/ujjain-mahakal-mandir-booking-tour-packages" class="btn btn-outline-danger btn-sm">More Details</a>
+        <a href="https://wa.me/919109507691" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Baglamukhi Package -->
+<div class="col-md-4">
+  <div class="card package-card h-100 shadow-lg border-0 rounded-3 hover-card">
+    <img src="{{ asset('images/baglamukhi-banner3.webp') }}" class="card-img-top rounded-top" alt="Baglamukhi Package">
+    <div class="card-body">
+      <h5 class="fw-bold text-danger">Maa Baglamukhi Darshan & Puja</h5>
+      <p class="text-muted">VIP Darshan, Baglamukhi Hawan, Stambhan Puja, Court Case Victory Anushthan at Nalkheda Dham.</p>
+      <div class="d-flex gap-2 mt-3">
+        <a href="destinations/maa-baglamukhi-nalkheda-dham-darshan-booking-puja-services" class="btn btn-outline-danger btn-sm">More Details</a>
+        <a href="https://wa.me/919109507691" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Omkareshwar Package -->
+<div class="col-md-4">
+  <div class="card package-card h-100 shadow-lg border-0 rounded-3 hover-card">
+    <img src="{{ asset('images/omkareshwar.jfif') }}" class="card-img-top rounded-top" alt="Omkareshwar Package">
+    <div class="card-body">
+      <h5 class="fw-bold text-danger">Omkareshwar Jyotirlinga Darshan</h5>
+      <p class="text-muted">Omkareshwar & Mamleshwar Jyotirlinga Darshan, Narmada Aarti, Parikrama and temple visit.</p>
+      <div class="d-flex gap-2 mt-3">
+        <a href="destinations/omkareshwar-jyotirlinga-darshan-booking-tour-packages" class="btn btn-outline-danger btn-sm">More Details</a>
+        <a href="https://wa.me/919109507691" target="_blank" class="btn btn-danger btn-sm">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
